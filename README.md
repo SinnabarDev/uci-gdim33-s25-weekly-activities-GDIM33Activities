@@ -1,7 +1,7 @@
 # GDIM 33 In-Class Activities
 ## W1
 ### Activity 1
-1. Inspo Board Google Drawing: https://docs.google.com/drawings/d/1iIsWhYMUuojkydBVqBoVylSC1UAXbz6EESBCh6M2yuc/edit?usp=sharing
+1. [Inspo Board Google Drawing](https://docs.google.com/drawings/d/1iIsWhYMUuojkydBVqBoVylSC1UAXbz6EESBCh6M2yuc/edit?usp=sharing)
 
 2. What patterns are emerging from your inspiration sources- are there any particular gameplay mechanics, genres, or non-game-related aesthetics you’re consistently interested in?
 Some gameplay mechanics emerging from my images are rougelike mechanics of earning point to to level up and getting rewards. The genre I seem to be interested in is pinball. The aesthic that is similar throughout many of the images is cozy cavern.
