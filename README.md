@@ -25,4 +25,18 @@ Commited and Pushed to Github Repo
 
 ### Activity 1
 
+[Updated Breakdown Google Drawing](https://docs.google.com/drawings/d/1hyft17UKS-b2Kp7RHTY_xo-L3twOELWk3xWb3Otlxco/edit?usp=sharing)
+
 ### Activity 2
+
+1. Why is it advantageous to save the event name for the explore-to-dialogue state transitions as Scene variable ("clickNpcEventName")?
+   A scene variable can be accessed from other graphs on the other gameobjects.
+
+2. Describe how using at least one Debug.Log() node helped you test your Graphs at an intermediate step.
+   I used the Debug.Log() node to show which nodes were firing in the graphs steps. This helped me to figure out you need to be close to the walrus to have interactionallow to be true.
+
+3. Is the Set Cursor Lock State relevant to your Vertical Slice? Why or why not?
+   This is somewhat relevant to my Vertical Slice project as my pinball game will have a state where the mouse cursor needs to be active to interact with the UI elements that will generate gameobjects to use a items and powerups and stored inside an inventory UI.
+
+4. Is the concept of a "game state" relevant to your Vertical Slice? Why or why not?
+   The concept of game state is relvant to my Vertical Slice project as it will allow me to transition from active play pinball board to non-active play where the player is using rougelike elements and gameobjects to incoperate to the next active play state.
