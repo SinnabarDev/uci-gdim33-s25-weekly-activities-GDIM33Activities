@@ -30,10 +30,10 @@ Commited and Pushed to Github Repo
 ### Activity 2
 
 1. Why is it advantageous to save the event name for the explore-to-dialogue state transitions as Scene variable ("clickNpcEventName")?
-   A scene variable can be accessed from other graphs on the other gameobjects.
+   A scene variable can be accessed from other graphs on the other gameobjects in the scene.
 
 2. Describe how using at least one Debug.Log() node helped you test your Graphs at an intermediate step.
-   I used the Debug.Log() node to show which nodes were firing in the graphs steps. This helped me to figure out you need to be close to the walrus to have interactionallow to be true.
+   I used the Debug.Log() node to show which nodes were firing in the graphs steps or reaching the final step. This helped me to figure out that my trigger event node in the walrus was targeting "this" instead of gamecontroller for the custom event.
 
 3. Is the Set Cursor Lock State relevant to your Vertical Slice? Why or why not?
    This is somewhat relevant to my Vertical Slice project as my pinball game will have a state where the mouse cursor needs to be active to interact with the UI elements that will generate gameobjects to use a items and powerups and stored inside an inventory UI.
