@@ -15,4 +15,5 @@ public class DialogueAdvancer : MonoBehaviour
     {
         Debug.Log("hello!");
     }
+    public static class EventNames;
 }
