@@ -54,7 +54,8 @@ Commited and Pushed to Github Repo
 ### Activity 2
 
 1. Assuming this activity is completed by a programmer, could a writer add more dialogue to this setup without writing any code? Why or why not?
-   A writter cannot add more dialouge to this setup because you need to understand the node and where it is headed. There is no plain text translation to create a way for the writters words to be put into the node code.
+   A writter can add more dialouge to this setup without much coding because the system uses scriptable object like dialouge to store each line. Writter are working on the text data and context only.
 2. What limit is there to the number of dialogue nodes that the writer could create without writing any code?
-
+   I suppose the limit is the amount of scriptable objects and the 4 player choices.
 3. In your own words, describe the purpose of the "Regenerate Nodes" button.
+   The Regenerate Nodes button rescans or refreshes the node library that Unity offers. Regenerate Nodes also checks for new node based scripts that are in the project. Allowing for custiom events and component nodes made from C# scripts.
