@@ -40,3 +40,21 @@ Commited and Pushed to Github Repo
 
 4. Is the concept of a "game state" relevant to your Vertical Slice? Why or why not?
    The concept of game state is relvant to my Vertical Slice project as it will allow me to transition from active play pinball board to non-active play where the player is using rougelike elements and gameobjects to incoperate to the next active play state.
+
+## W4
+
+### Activity 1
+
+[Itch.io Build](https://sinnabardev.itch.io/gdim33-verticalslice)
+
+1. My goals in this playtesting is for the players to interact with the base pinball system with "smooth" physics and score some points reaching the shopUI screen.
+
+2. During playtesting players had trouble identifying the feedback for the pluger and how long to charge it therefore I need a visual indicator to show how long the plunger is pulled. Player found that the physics felt natural and good for unity build. Players also commented that the game felt a little bland as the board of the pinball arena lack visual elements to keep the player engaged. Player also wants to see more unique elements such as modifiers that multiply the ball.
+
+### Activity 2
+
+1. Assuming this activity is completed by a programmer, could a writer add more dialogue to this setup without writing any code? Why or why not?
+   A writter cannot add more dialouge to this setup because you need to understand the node and where it is headed. There is no plain text translation to create a way for the writters words to be put into the node code.
+2. What limit is there to the number of dialogue nodes that the writer could create without writing any code?
+
+3. In your own words, describe the purpose of the "Regenerate Nodes" button.
