@@ -47,6 +47,7 @@ Commited and Pushed to Github Repo
 
 [Itch.io Build](https://sinnabardev.itch.io/gdim33-verticalslice)
 
+Playtesters: Jeremiah Yang, Ke-Chieh Chang, Jingyi Cheng, Brandon Tsay
 1. My goals in this playtesting is for the players to interact with the base pinball system with "smooth" physics and score some points reaching the shopUI screen.
 
 2. During playtesting players had trouble identifying the feedback for the pluger and how long to charge it therefore I need a visual indicator to show how long the plunger is pulled. Player found that the physics felt natural and good for unity build. Players also commented that the game felt a little bland as the board of the pinball arena lack visual elements to keep the player engaged. Player also wants to see more unique elements such as modifiers that multiply the ball.
