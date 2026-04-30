@@ -62,7 +62,7 @@ Playtesters: Jeremiah Yang, Ke-Chieh Chang, Jingyi Cheng, Brandon Tsay
 3. In your own words, describe the purpose of the "Regenerate Nodes" button.
    The Regenerate Nodes button rescans or refreshes the node library that Unity offers. Regenerate Nodes also checks for new node based scripts that are in the project. Allowing for custiom events and component nodes made from C# scripts.
 
-## W4
+## W5
 
 ### Activity 1
 
