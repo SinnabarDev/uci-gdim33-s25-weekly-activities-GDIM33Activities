@@ -48,6 +48,7 @@ Commited and Pushed to Github Repo
 [Itch.io Build](https://sinnabardev.itch.io/gdim33-verticalslice)
 
 Playtesters: Jeremiah Yang, Ke-Chieh Chang, Jingyi Cheng, Brandon Tsay
+
 1. My goals in this playtesting is for the players to interact with the base pinball system with "smooth" physics and score some points reaching the shopUI screen.
 
 2. During playtesting players had trouble identifying the feedback for the pluger and how long to charge it therefore I need a visual indicator to show how long the plunger is pulled. Player found that the physics felt natural and good for unity build. Players also commented that the game felt a little bland as the board of the pinball arena lack visual elements to keep the player engaged. Player also wants to see more unique elements such as modifiers that multiply the ball.
@@ -60,3 +61,35 @@ Playtesters: Jeremiah Yang, Ke-Chieh Chang, Jingyi Cheng, Brandon Tsay
    I suppose the limit is the amount of graphs that act similar to scriptable objects and the 4 player choices branching out the choices.
 3. In your own words, describe the purpose of the "Regenerate Nodes" button.
    The Regenerate Nodes button rescans or refreshes the node library that Unity offers. Regenerate Nodes also checks for new node based scripts that are in the project. Allowing for custiom events and component nodes made from C# scripts.
+
+## W4
+
+### Activity 1
+
+1. Write scriptable object code with your data points.
+   - Create RewardTypes based on the modifier desired.
+   - Create String Title Name.
+   - Create String Text Description.
+   - Create sprite icon field.
+   - Create int value for rarity.
+   - All fields will be passed to a container or prefab.
+   - The title name will be a text field to define the object to the player.
+   - Sprite will be passed to the container.
+   - Description will be passed to container.
+   - RewardType will be read from the coin machine code.
+   - Amount/modifier will be read from the coin machine code.
+2. Create ui/Coin generation manger.
+   - UI will be probaly a button with CoinMachine sprite.
+   - Component with script coinmanager/generator.
+   - 3 container gameobjects to hold instaite coin game child.
+   - Coins need to have visual and be button on click().
+3. Make other code or interactions read the code.
+   - Coin Machine will store a list of scriptable objects and generate from this pool.
+   - An array will spawn 3 scriptable objects at RAND.
+   - There will be a way to input and apply reward type read from the scriptable object selected.
+   - gameObjects are then destroyed.
+   - Coin Machine will read the graph and scene variables in graphs that the modifiers target.
+
+### Activity 2
+
+1. I created a C# script for scriptableobjects called coinModifier which store the reaward type and descriptor fields mostly textual. I also created some objects coinmodifiers storing data aroung 6 scriptableobjects to test the spawn generation with. The UI I made with a simple button and the onclick was able to call generate() creating 1 coin but the array was suppose to spawn 3, maybe it is overlapping or needs to have a horizontal layout.
