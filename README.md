@@ -93,3 +93,27 @@ Playtesters: Jeremiah Yang, Ke-Chieh Chang, Jingyi Cheng, Brandon Tsay
 ### Activity 2
 
 1. I created a C# script for scriptableobjects called coinModifier which store the reaward type and descriptor fields mostly textual. I also created some objects coinmodifiers storing data aroung 6 scriptableobjects to test the spawn generation with. The UI I made with a simple button and the onclick was able to call generate() creating 1 coin but the array was suppose to spawn 3, maybe it is overlapping or needs to have a horizontal layout.
+
+## W6
+
+### Activity 1
+1. what is NEW
+   -  rouge-like coin machine
+   -  coin scriptable objects with modifiers
+   -  npc
+2. [Itch.io Build](https://sinnabardev.itch.io/gdim-33-vertical-slice-2)
+3. your playtesting goal(s)
+   - Playability?
+   - Can the players interact with rouge like elements?
+   - Will the players build out there stats to improve gameplay?
+4. Notes: The hold bar takes too long to hold and feels tedious after a while for the player the hold should scale. The ball spawn can be slightly delayed making the player spawn multiple balls. The rougelike coins feel unpolished in response.
+
+### Activity 2
+1. Why does the Multiply setting of the Blend node make the resulting color darker and less saturated than the input colors?
+The Multiply blend node darkend the resulting color as it takes the first color and the second blend color multiplying the color data effectively apporaching the 1 values in the RBG channels.
+2. If we use Multiply to combine Alpha values, will the resulting value be more or less translucent than either of the original values, and why?
+Mathematically it would be more translucent as the value of the alpha is between 0 and 1 meaning the maximum numbers being multiply will be 1 but if numbers are less that 1 then the resulting value is lower.
+3. When we created the SampleTexture2D node, Unity auto-created the UV0 Node for us to get the UV coordinates for sampling the texture. Where does the shader get these UV values from?
+The texture sampling node is ultilizing UV Map to connect the location of the input texture which is the Shiba texture hooked up to the material.
+4. You just learned that you can manipulate colors with math. Does that sound interesting or exciting to you?
+I orginally maniplute colors with math using RGB 255 values but this add more complexity to it with positional data, transulcency, and materials, I am both excited and fearful.
