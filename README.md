@@ -117,3 +117,21 @@ Mathematically it would be more translucent as the value of the alpha is between
 The texture sampling node is ultilizing UV Map to connect the location of the input texture which is the Shiba texture hooked up to the material.
 4. You just learned that you can manipulate colors with math. Does that sound interesting or exciting to you?
 I orginally maniplute colors with math using RGB 255 values but this add more complexity to it with positional data, transulcency, and materials, I am both excited and fearful.
+
+## W7
+
+### Activity 1
+1. For our vertex color shader in step (2), where did the data for the Vertex Color node come from?
+The shiba model mesh asset in the project contains the data for color in 2145 vertices.The vertex color node is taking the object space : postion, normal, annd tangent from the mesh geometry then through fragment to output color at that vertex.
+2. Since vertex color is stored as data in each vertex of the mesh, why is the color on our shiba from step (3) blended at the edges of different regions of color?
+The color that are blended between the edges of the shiba, are data in between the vertices as this is a combination of the vertices color data. 
+3. Why is the shiba from step (3), which is colored with vertex color, less detailed than the shiba we rendered with a texture in last week’s activity? Given that vertex color generally results in a less detailed color application than applying a texture, what can you imagine vertex color is useful for?
+The shiba is not using pixel by pixel color data to map the mesh, instead it is using the blend of vertices color data to interpolate the color by blending in between the ploygons of the mesh model.
+4. Based on the color of the shiba in step (4), does anything look wrong with the mesh’s vertex normals?
+Based on the color of the shiba from this step it seems that the normal of the shiba is backwards reflecting the color with the light source.
+5. We used the color output of a shader to visualize a mesh’s vertex normal values in step (4). Name one other piece of vertex data (or any kind of data) you can imagine testing with a debug shader like this, and describe why that might be useful.
+Using debugger shader for the models mesh vertecies can be applied to show inconsisticies in the mechs polygon map as some surfaces maybe be stretched and this is not apparient in UV unwrappen flatten map. It is also able to visualize the seams in colors.
+6. Why is there an error in the lighting in step (4) on the back of the Shiba?
+The dot product is calculating in opposite directions between the light direction and inverted normal giving us a negative product and results in black instead of white.
+7. Why do you think we set the Blend Mode to Additive for the fire effect in Step (5)?
+I think we change the blend mode to additive as to keep the brightness of the fire effect consistant. The alpha mode would have made is a bit less apparent with traparency and multiply would darken the color and effect.
