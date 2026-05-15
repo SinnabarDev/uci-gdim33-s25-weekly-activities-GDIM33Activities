@@ -66,29 +66,24 @@ Playtesters: Jeremiah Yang, Ke-Chieh Chang, Jingyi Cheng, Brandon Tsay
 
 ### Activity 1
 
-1. Write scriptable object code with your data points.
-   - Create RewardTypes based on the modifier desired.
-   - Create String Title Name.
-   - Create String Text Description.
-   - Create sprite icon field.
-   - Create int value for rarity.
-   - All fields will be passed to a container or prefab.
-   - The title name will be a text field to define the object to the player.
-   - Sprite will be passed to the container.
-   - Description will be passed to container.
-   - RewardType will be read from the coin machine code.
-   - Amount/modifier will be read from the coin machine code.
-2. Create ui/Coin generation manger.
-   - UI will be probaly a button with CoinMachine sprite.
-   - Component with script coinmanager/generator.
-   - 3 container gameobjects to hold instaite coin game child.
-   - Coins need to have visual and be button on click().
-3. Make other code or interactions read the code.
-   - Coin Machine will store a list of scriptable objects and generate from this pool.
-   - An array will spawn 3 scriptable objects at RAND.
-   - There will be a way to input and apply reward type read from the scriptable object selected.
-   - gameObjects are then destroyed.
-   - Coin Machine will read the graph and scene variables in graphs that the modifiers target.
+1. Create animation clips and Animator setup.
+   - Create Idle animation.
+   - Create Walk/Move animation.
+   - Create Attack animation.
+   - Create Hit/Collision reaction animation.
+   - Create Death/Disable animation if needed.
+   - Create an Animator Controller and assign it.
+2. Create movement and collision animation script.
+   - Reference Animator animator.
+   - Reference Rigidbody2D if movement is physics-based.
+   - Track movement velocity or direction.
+   - Detect if object is currently moving.
+3. Game logic and npc interact with Animator states.
+   - Enemy patrol logic updates movement animation automatically.
+   - Stop movement when attacking.
+   - Collision with walls flips sprite direction.
+   - Taking damage triggers Hit animation trigger.
+   - Health reaching zero triggers Death animation.
 
 ### Activity 2
 
