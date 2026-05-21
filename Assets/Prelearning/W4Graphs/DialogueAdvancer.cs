@@ -1,19 +1,19 @@
-using UnityEngine;
 using Unity.VisualScripting;
+using UnityEngine;
 
 public class DialogueAdvancer : MonoBehaviour
 {
-    [SerializeField] private DialogueNode nextLine;
+    [SerializeField]
+    private DialogueNode nextLine;
 
     // Button hooks up to this method
-    public void ChooseDialogue ()
+    public void ChooseDialogue()
     {
         EventBus.Trigger(EventNames.NewDialogueEvent, nextLine);
     }
 
-    public void PrintHello ()
+    public void PrintHello()
     {
         Debug.Log("hello!");
     }
-    public static class EventNames;
 }

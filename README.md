@@ -130,3 +130,28 @@ Using debugger shader for the models mesh vertecies can be applied to show incon
 The dot product is calculating in opposite directions between the light direction and inverted normal giving us a negative product and results in black instead of white.
 7. Why do you think we set the Blend Mode to Additive for the fire effect in Step (5)?
 I think we change the blend mode to additive as to keep the brightness of the fire effect consistant. The alpha mode would have made is a bit less apparent with traparency and multiply would darken the color and effect.
+
+## W8
+
+### Activity 1
+1. what is NEW
+   -  New animations and sprite
+   -  NPC roaming pattern
+   -  Added some rougelike element and new coin modifiers
+   -  WIP tile map
+2. [Itch.io Build](https://sinnabardev.itch.io/gdim-33-vertical-slice-2)
+3. your playtesting goal(s)
+   - Can the player reach the other states before losing interest?
+   - Can the players interact with rouge like elements such as npc and coin modifiers?
+   - Will the players build out there stats to improve gameplay?
+4. Notes: Player was able to start with the controls once glossing over the instructions. Balls that spawn multiple out of bound threw of the players immersion. Player was not able to recognize the second state as interactable immediately closing it. Improvement is needed to telegraph that this is another state that requires some attention.
+
+### Activity 2B : lighting 2D sprite + 2d shiny animation
+1. How is the Fraction node used to animate the shine effect?
+The fraction node takes in the value of the time delta from the time node and adds it to the UV node value which increases the values moing the UV for the sample 2D texture for the ShineTex.
+2. Why does the Shine texture for the ShinySprite shader need to be BLACK by default? Consider that we're using the Add Node to combine it with the original texture...
+We do not want the node to add the values of two white base color value or else instead of shining the effect will flash. The black texture avoids washing out the RGB values in the original texture.
+3. Why isn't the building texture we used in the ShaderGraph applied to all of the Sprites that use the ShinySprite shader?
+The texture we applied of the building does not get applied because of invalid UV cooridinates dafaulting to the white mode.
+4. Why do we multiply fraction(time * ShineSpeed) with the speed variable inside the fraction instead of outside- as in fraction(time)*speed? If you're not sure, try modifying your graph to multiply the Fraction node with ShineSpeed instead of multiplying Time with ShineSpeed, and see what happens.
+Well mathimatically the shinespeed is a float value which we can set if we are doubling the speed and the fraction in inside instead of outside then the fraction will be doubled making the UV skip over textures.
