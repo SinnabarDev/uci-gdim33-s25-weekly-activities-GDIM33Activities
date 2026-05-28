@@ -155,3 +155,12 @@ We do not want the node to add the values of two white base color value or else 
 The texture we applied of the building does not get applied because of invalid UV cooridinates dafaulting to the white mode.
 4. Why do we multiply fraction(time * ShineSpeed) with the speed variable inside the fraction instead of outside- as in fraction(time)*speed? If you're not sure, try modifying your graph to multiply the Fraction node with ShineSpeed instead of multiplying Time with ShineSpeed, and see what happens.
 Well mathimatically the shinespeed is a float value which we can set if we are doubling the speed and the fraction in inside instead of outside then the fraction will be doubled making the UV skip over textures.
+
+## W8
+
+### Activity 1
+1. The minecraft purple swirlly effect when traversing the nether could be rendered using a overlay, post processing. Manipulating the camera, full screen to have a effect for the already rendered viewport. Node for coordinate and time in the shader could be major features for the shader. Its a collider with the portal that activates a layer of post processing effect. Minecraft also has potion effects that trigger visual changes such as the potion of invisiblity which skipps drawing the papers in the rendering pipeline using a tag of invisible status. To replicate this we an drop the alpha of the shaper to 0 making it transparent.
+
+### Activity 2
+[WIP Shadergraph Screenshot](https://docs.google.com/drawings/d/1MU_qhy_KbTun_plxylVnn3_jtcGM_enCO56VPyUpgSw/edit?usp=sharing)
+I figured out how to modulo is node that set out a divisible pattern that is used by reapeting until it hits the input value in my graph the screen position. By dividing this further with the size I was able to create a CRT texture. I had to read up on some material to create a retro vibe for my second state in my game. This effect will only be activated in the second state as a post pocessing using a full screen pass.
