@@ -156,7 +156,7 @@ The texture we applied of the building does not get applied because of invalid U
 4. Why do we multiply fraction(time * ShineSpeed) with the speed variable inside the fraction instead of outside- as in fraction(time)*speed? If you're not sure, try modifying your graph to multiply the Fraction node with ShineSpeed instead of multiplying Time with ShineSpeed, and see what happens.
 Well mathimatically the shinespeed is a float value which we can set if we are doubling the speed and the fraction in inside instead of outside then the fraction will be doubled making the UV skip over textures.
 
-## W8
+## W9
 
 ### Activity 1
 1. The minecraft purple swirlly effect when traversing the nether could be rendered using a overlay, post processing. Manipulating the camera, full screen to have a effect for the already rendered viewport. Node for coordinate and time in the shader could be major features for the shader. Its a collider with the portal that activates a layer of post processing effect. Minecraft also has potion effects that trigger visual changes such as the potion of invisiblity which skipps drawing the papers in the rendering pipeline using a tag of invisible status. To replicate this we an drop the alpha of the shaper to 0 making it transparent.
@@ -164,3 +164,17 @@ Well mathimatically the shinespeed is a float value which we can set if we are d
 ### Activity 2
 [WIP Shadergraph Screenshot](https://docs.google.com/drawings/d/1MU_qhy_KbTun_plxylVnn3_jtcGM_enCO56VPyUpgSw/edit?usp=sharing)
 I figured out how to modulo is node that set out a divisible pattern that is used by reapeting until it hits the input value in my graph the screen position. By dividing this further with the size I was able to create a CRT texture. I had to read up on some material to create a retro vibe for my second state in my game. This effect will only be activated in the second state as a post pocessing using a full screen pass.
+
+## W10
+### Activity 1
+1. Decide what your goal for playtesting today will be.
+For my playtesting goals I want the player to be able to play multiple loops of my gameplay loop without the npcs or physics breaking the game states.
+2. what is NEW in your build since your Milestone 2 submission.
+Since Milestone 2, I have refined the physics, physics materials, and interactions will the colliders, some fixes include balls getting struck on vertical colliders. I have also improve the navmesh movement across the board. I added a shader graph and material for the flippers which are now character sprites for the player to have better visual indication of feedback.
+3. Put your playtesting notes in your Devlog.
+In playtesting the player was able to complete 2 loops between my gamestates but unfortunately there was some bumps along the way. The ball did get stuck in a vertical position which I thought i fix the player was able to replicate this bug. Could extend this as a feature where the ball blows up if stationary in hte board. NPC also got stuck after a switch in game states. Player thought the game loop was simple and fun.
+### Activity 2 
+1. In your Devlog, write a quick description of a problem you solved or an improvement you made to your project today.
+For the table's planning strategy we have came up with the high level phases of IDEALIZATION, DIAGRAMING, AND BREAKINGDOWN systems. The idealization is the large idea of the what type of game and systems fall under that genre or theme. THen the diagraming is where we need to create a breakdown diagram to put these objects and systems in circles and chart out the relationships within itself and between each other how do the actions affect the other systems or componenets. This is where we can further BREAKDOWN the steps into 3 big steps and the smaller steps involved with that task towards that systems impelmentation goal. Discusssing the topic allows me to see the strategies of other peoples prespectives and these similar task they used make the scope of the game systems feel achieveable and smaller than just make a FPS or RPG or etc. These steps also reveals the scope and complexity of the idea of the game if it is able to be completed in the time span required.
+### Activity 3
+1. Fixed the ball getting stuck on collision, the NPC logic breaking (hopefully needs further playtesting), and the visual indicators for the flipper men.
